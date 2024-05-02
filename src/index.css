@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #004643;
 }
 
-.wrapper{
+.wrapper {
   max-width: 1440px;
   width: 100%;
   overflow-x: hidden;
@@ -18,46 +18,118 @@
   color: #fffffe;
 }
 
-.custom-form{
-  width: 400px;
-  height: auto;
-  margin: 20px auto;
-}
-
-.input-and-btn{
-  display: flex;
-}
-
-.todo-box{
-  width: 400px;
+.neo-box {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 400px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+.custom-form {
+  /* width: 400px;
+  height: auto;
+  margin: 20px auto; */
+}
+
+.input-and-btn {
+  display: flex;
+  padding: 0.8rem 2rem;
+  background: transparent;
+
+  /* border: 2px solid black; */
+}
+
+.todo-box {
+  /* width: 400px;
+  margin: 0 auto; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
+  background: #abd1c6;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px;
 }
 
-.todo-box .content{
+.todo-box .content {
   display: flex;
 }
 
-.todo-box .content p{
-  margin-top: -6px;
+.todo-box .content p {
+
   margin-left: 6px;
 }
 
-.todo-box span{
-  margin: 0 5px;
+.todo-box span {
+  /* margin: 0 5px; */
 }
 
-.delete-all{
-  width: 400px;
+.delete-all {
+  width: auto;
+  margin: 10px;
 }
 
-.actions-box{
+.actions-box {
   cursor: pointer;
+  background-color: transparent;
 }
 
-.back-btn{
+.back-btn {
   margin-top: 5px;
   width: 100%;
+}
+
+.mainform {
+  background-color: #abd1c6;
+  border-radius: 10px;
+}
+
+label {
+  background-color: transparent;
+  border-radius: 20%;
+  color: black;
+  margin: 0px;
+  padding: 10px;
+  font-size: 1.44rem;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+}
+
+form-control {
+  background-color: transparent;
+  border: 2px solid #004643;
+}
+
+.content {
+  background-color: transparent;
+}
+
+p {
+  background-color: transparent;
+  color: black;
+}
+
+i {
+  background-color: transparent;
+}
+
+span {
+  background-color: transparent;
+}
+
+svg {
+  background-color: transparent;
+  color: black;
+}
+
+
+h1{
+  margin: 100px;
+  padding: 50px;
 }

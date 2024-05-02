@@ -31,7 +31,8 @@ function App() {
     return (
     <div className="wrapper">
       <br></br>
-      <h1 className="text-center">Complete tasks and achieve objectives</h1>
+      <h1 className="text-center font-weight-bold m-10 ">TaskGeniusX</h1>
+      <div className='neo-box'>
       <Form editFormVisibility={editFormVisibility} editTodo={editTodo}
       cancelUpdate={cancelUpdate}/>
       <Todos handleEditClick={handleEditClick} editFormVisibility={editFormVisibility}/>
@@ -39,6 +40,7 @@ function App() {
         <button className='btn btn-danger btn-md delete-all'
         onClick={()=>dispatch(deleteAll())}>DELETE ALL</button>
       )}
+    </div>
     </div>
   );
 }

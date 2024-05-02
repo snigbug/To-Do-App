@@ -46,12 +46,12 @@ export const Form = ({editFormVisibility, editTodo, cancelUpdate}) => {
   return (
     <>
       {editFormVisibility===false?(
-        <form className='form-group custom-form' onSubmit={handleSubmit}>
+        <form className='mainform' onSubmit={handleSubmit}>
           <label>Add your tasks</label>
           <div className='input-and-btn'>
-              <input type="text" className='form-control' required
+              <input type="text" className='form-control' placeholder='Enter your tasks'required
               value={todoValue} onChange={(e)=>setTodoValue(e.target.value)}/>
-              <button type="submit" className='btn btn-secondary btn-md'>ADD</button>
+              <button type="submit" className='btn btn-warning btn-md'>ADD</button>
           </div>
         </form>
       ):(
@@ -62,7 +62,7 @@ export const Form = ({editFormVisibility, editTodo, cancelUpdate}) => {
               value={editValue||""} onChange={(e)=>setEditValue(e.target.value)}/>
               <button type="submit" className='btn btn-secondary btn-md'>UPDATE</button>
           </div>
-          <button type="button" className='btn btn-primary btn-md back-btn'
+          <button type="button" className='btn btn-warning'
           onClick={cancelUpdate}>BACK</button>
         </form>
       )}
